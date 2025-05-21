@@ -1,10 +1,11 @@
-def show_result(text , type) :
-    line_printer()
-    print(f"The {type} text is : {text}")
-    line_printer()
+class Show_output :
 
-def line_printer() :
-    print("=============================")
+    def show_result(self , text , type):
+        '''this method give text and type and show it with two line in above and below'''
+        self.line_printer()
+        print(f"The {type} text is : {text}")
+        self.line_printer()
 
-def print_text(text) :
-    print(text)
+    def line_printer(self):
+        '''print line , ===='''
+        print("=============================")
